@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WeatherVue</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+</head>
+<body>
+    <div class="weather-class" id="weather-class">
+        <h1>WeatherVue</h1>
+        <div class="weather-content" id="weather-content">
+           <div class="weather-header">
+            <i class='bx bxs-hand-up bx-rotate-180' id="clickDown"></i>
+            <div class="weather-search">
+                <div class="weather-icon">
+                    <i class="search fa fa-search"></i>
+                </div>
+                <div class="weather-input">
+                    <input type="text" placeholder="enter your location" id="search" autocomplete="off">
+                    <i class="clear fa fa-times"></i>
+                </div>
+                
+            </div>
+        </div>
+
+        <div class="weather-state">
+<div class="weather-added" id="weather-added">
+
+</div>
+<div class="not-found" id="not-found">
+    <i class='bx bx-left-arrow-circle weatherBack' id="notFound"></i>
+    <img src="images/404.png" >
+    <p>Invalid Location!</p>
+</div>
+<div class="weather-check">
+    <div class="city-box">
+        <div class="city">
+            <i class='bx bx-left-arrow-circle weatherBack' id="weather"></i>
+            <span></span>
+            <h3></h3>
+        </div>
+        <div class="add-div">
+        <button id="add">ADD</button>
+        </div>
+    </div>
+    <div class="weather-box">
+        <img src>
+        <p class="temprature"></p>
+        <p class="description"></p>
+    </div>
+    <div class="weather-details">
+        <div class="feels">
+            <div class="text">
+                <span></span>
+                <p>Feels Like</p>
+            </div>
+        </div>
+        <div class="humidity">
+            <div class="text">
+                <span></span>
+                <p>Humidity</p>
+            </div>
+        </div>
+        <div class="wind">
+            <div class="text">
+                <span></span>
+                <p>Wind Speed</p>
+            </div>
+        </div>
+    </div>
+    <div class="forcast-container">
+        <div class="open-forcast" id="movableDiv">
+            <h2 id="text">Open Forecast Weather</h2>
+            <i class='bx bxs-up-arrow' id="arrow"></i>
+        </div>
+        <div class="forcasts" id="forcasts">
+        </div>
+    </div>
+</div>
+        </div>
+        </div>
+    </div>
+    <script src="https://kit.fontawesome.com/7c8801c017.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/luxon@3.3.0/build/global/luxon.min.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
