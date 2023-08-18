@@ -1,15 +1,12 @@
 # WeatherVue
 Discover weather forecasts for any city using our intuitive app. Get real-time updates on temperature, conditions, and more. Save your favorite cities to access their forecasts effortlessly.
 
-<<<<<<< HEAD
 ![image](https://github.com/tjn20/Weather-App/assets/142109365/2bce8120-1332-4642-83e9-200c1f579207)
 
-![image](https://github.com/tjn20/Weather-App/assets/142109365/2a702ce6-942c-4ce0-9682-23dbfa8f7a84)
-=======
+
 ![image](https://github.com/tjn20/WeatherVue/assets/142109365/ae68fe3d-e053-4d35-acd7-a29e1aabee84)
 
 ![image](https://github.com/tjn20/WeatherVue/assets/142109365/ea9577f7-c0b8-4f3b-b955-e695e984e12b)
->>>>>>> 98c03ba0143bb7df8338c6ea1cb9988e9f6622a2
 
 ## Features
 
