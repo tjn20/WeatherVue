@@ -39,7 +39,7 @@ let descAdded="";
 
 document.getElementById("search").addEventListener("keydown",(event)=>{
 if(event.keyCode === 13){
-    const APIKey='395f84125ffe969d6e542e18468ff8ad';
+    const APIKey='YOUR_API_KEY';
     const city=document.querySelector("input").value;
     if(city==='')
     return;
@@ -95,7 +95,7 @@ wind.innerHTML=`${parseInt(data.wind.speed)}Km/s`;
 feelsLike.innerHTML=`${parseInt(data.main.feels_like)} <span>°C</span>`;
 cityName.textContent=city+","+data.sys.country;
 
-fetch(`http://api.timezonedb.com/v2.1/get-time-zone?key=D4JS61HI9DZ8&format=json&by=position&lat=${data.coord.lat}&lng=${data.coord.lon}`).then(res=>res.json()).then(data=>{
+fetch(`http://api.timezonedb.com/v2.1/get-time-zone?key=YOUR_API_KEY&format=json&by=position&lat=${data.coord.lat}&lng=${data.coord.lon}`).then(res=>res.json()).then(data=>{
     data.formatted;
     let as="";
     as+= data.formatted.slice(0, 11);
@@ -108,7 +108,7 @@ fetch(`http://api.timezonedb.com/v2.1/get-time-zone?key=D4JS61HI9DZ8&format=json
 const forcastCont=document.getElementById("forcasts");
 console.log(localStorage);
 
-fetch(`https://api.openweathermap.org/data/2.5/forecast?lat=${data.coord.lat}&lon=${data.coord.lon}&appid=51550be2c1374103fc9ee83cce877e74`).then(res=>res.json()).then(data=>{
+fetch(`https://api.openweathermap.org/data/2.5/forecast?lat=${data.coord.lat}&lon=${data.coord.lon}&appid=YOUR_API_KEY`).then(res=>res.json()).then(data=>{
 console.log(data); 
 if(forcastCont.hasChildNodes())
 forcastCont.textContent="";
@@ -276,7 +276,7 @@ return exist;
 
 
 
-     const apiKey = '51550be2c1374103fc9ee83cce877e74';
+     const apiKey = 'YOUR_API_KEY';
 
 async function fetchWeather(location) {
   try {
@@ -300,7 +300,7 @@ function updateForecast(childElement, weatherData) {
     descriptionElement.textContent=weatherData.weather[0].description;
     tempElement.textContent=parseInt(weatherData.main.temp)+"°";
     feelsLikeElement.textContent=parseInt(weatherData.main.feels_like)+"°";
-    fetch(`http://api.timezonedb.com/v2.1/get-time-zone?key=D4JS61HI9DZ8&format=json&by=position&lat=${weatherData.coord.lat}&lng=${weatherData.coord.lon}`).then(res=>res.json()).then(data=>{
+    fetch(`http://api.timezonedb.com/v2.1/get-time-zone?key=YOUR_API_KEY&format=json&by=position&lat=${weatherData.coord.lat}&lng=${weatherData.coord.lon}`).then(res=>res.json()).then(data=>{
       data.formatted;
       let as="";
       as+= data.formatted.slice(0, 11);
