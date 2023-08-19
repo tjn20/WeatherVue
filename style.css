@@ -616,6 +616,14 @@ height: 100%;
         }
       }
 
+@media screen and (max-width:462px) {
+    
+.weather-class .weather-content .weather-state .weather-added .weather-div{
+width: 90%;
+margin-left: 0;
+}    
+}
+
     
 
 
